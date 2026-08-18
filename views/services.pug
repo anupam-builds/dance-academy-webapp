@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#MissionsSection
+        h2 Our Premium Services
+        div.cards-container
+            div.card 
+               h3 Private Coaching
+               div.card-box
+                  div.card-content
+                    p One-on-one sessions tailored specifically to your skill level and personal goals. Perfect for fast improvement or wedding choreography.
+            
+            div.card 
+              h3 Studio Rentals
+              div.card-box
+                  div.card-content
+                    p Need space to practice? Our state-of-the-art, fully mirrored studios are equipped with premium sound systems and sprung floors.
+            
+            div.card 
+              h3 Event Choreography
+              div.card-box
+                  div.card-content
+                    p We choreograph school events, corporate flash mobs, and professional stage performances. Let us make your event unforgettable.

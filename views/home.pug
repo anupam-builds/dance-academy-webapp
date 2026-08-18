@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#introSection 
+        div.intro-content
+            h1 Welcome to Atharv's Dance Academy 
+            div.small Eat Sleep Dance Repeat 
+            a.btn-primary(href="/contact") Join Now
+    
+    section#MissionsSection
+        h2 Our Missions
+        div.cards-container
+            div.card 
+               h3 Dance Perfection
+               div.card-box
+                  div.card-img
+                    img(src="/static/img/d1.png", alt="Dance Icon 1")
+                  div.card-content
+                    p We refine your moves to absolute perfection with personalized guidance.
+            
+            div.card 
+              h3 Expert Teaching
+              div.card-box
+                  div.card-img
+                    img(src="/static/img/d2.png", alt="Dance Icon 2")
+                  div.card-content
+                    p Learn from industry professionals who have danced on global stages.
+            
+            div.card 
+              h3 Dance your way
+              div.card-box
+                  div.card-img
+                    img(src="/static/img/d3.png", alt="Dance Icon 3")
+                  div.card-content
+                    p Express yourself freely in a supportive, judgment-free environment.
+    
+    section#SponsorsSection
+         h2 Our Sponsors
+         div#sponsors
+            img(src="/static/img/apple.png", alt="Apple Sponsor", class="spImage")
+            img(src="/static/img/micro.png", alt="Microsoft Sponsor", class="spImage")
+            img(src="/static/img/react.png", alt="React Sponsor", class="spImage")
+            img(src="/static/img/node.png", alt="Node Sponsor", class="spImage")

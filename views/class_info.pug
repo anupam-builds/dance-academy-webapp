@@ -1,0 +1,36 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#MissionsSection
+        h2 Class Information & Schedule
+        div.cards-container
+            div.card(style="border-top: 5px solid #ff4757;")
+               h3 Beginners Batch
+               div.card-box
+                  div.card-content
+                    p #[strong Days:] Monday, Wednesday, Friday
+                    p #[strong Time:] 5:00 PM - 6:30 PM
+                    p #[strong Focus:] Basic rhythm, coordination, and learning the foundational steps of Hip-Hop and Contemporary.
+            
+            div.card(style="border-top: 5px solid #ffa502;")
+              h3 Intermediate Batch
+              div.card-box
+                  div.card-content
+                    p #[strong Days:] Tuesday, Thursday, Saturday
+                    p #[strong Time:] 6:30 PM - 8:00 PM
+                    p #[strong Focus:] Advanced choreography retention, musicality, and stage presence.
+            
+            div.card(style="border-top: 5px solid #2ed573;")
+              h3 Pro / Crew Training
+              div.card-box
+                  div.card-content
+                    p #[strong Days:] Saturday & Sunday
+                    p #[strong Time:] 10:00 AM - 1:00 PM
+                    p #[strong Focus:] Competition prep, intense conditioning, and professional freestyle development. Invitation only.

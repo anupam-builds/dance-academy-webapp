@@ -1,0 +1,13 @@
+Mongo DB 
+Download and install Compass mongodb
+
+how to start Mongodb - 
+1. add path-
+i.Go to C drive -> open program file -> open mongodb -> Then Server -> version 8.0 what ever -> open bin  
+ii. copy full path.
+iii. right click to this PC open properties -> Advance System Settings -> Environment Variable -> Edit path and paste path that you copied -> save. 
+
+2. Go to start and turn on Window Power Shell in admin mode.
+3. write mongo and hit enter.
+
+

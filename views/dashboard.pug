@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+      include ../static/styleContact.css
+
+block content 
+    div.container
+        //- This dynamically prints the name passed from app.js!
+        h1 Welcome Back, #{userName}! 
+        
+        div(style="text-align: center; margin-top: 30px; font-size: 1.2rem; color: #57606f;")
+            p You have successfully logged into your Atharv's Dance Academy account.
+            p Grab your dancing shoes, your classes are waiting!
+            
+            div(style="margin-top: 40px;")
+                a.btn(href="/" style="text-decoration: none;") Explore Classes
+                a.btn(href="/login" style="text-decoration: none; background-color: #ff4757; border-color: #ff4757; margin-left: 15px;") Logout

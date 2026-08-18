@@ -1,0 +1,60 @@
+html
+  head
+    title Atharv's Dance Academy
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css")
+    block scripts
+    block style
+  body
+    nav#navbar.top 
+        ul
+          div#logo 
+            img(src="/static/img/logo.png")
+            | ADA
+          li #[a(href="/") Home] 
+          li #[a(href="/about") About]
+          li #[a(href="/services") Services]
+          li #[a(href="/classinfo") Class Info]
+          li #[a(href="/contact") Contact Us]
+          
+          div.auth-buttons
+            a.nav-btn.login-btn(href="/login") Login
+            a.nav-btn.register-btn(href="/register") Register
+    block content
+    footer.modern-footer
+      div.footer-wrapper
+        div.footer-container
+          div.footer-left
+            div.footer-logo
+              img(src="/static/img/logo.png", alt="ADA Logo")
+              span ATHARV'S ACADEMY
+              
+            p Empowering dancers with advanced multi-modal tools to improve rhythm selection and performance outcomes.
+            
+            div.social-icons
+              i.fa-brands.fa-x-twitter
+              i.fa-brands.fa-linkedin-in
+              i.fa-brands.fa-instagram
+              i.fa-brands.fa-facebook-f
+            
+            button.back-to-top(onclick="window.scrollTo(0,0)") ⌃ BACK TO TOP
+          
+          div.footer-links
+            div.footer-column
+              h4 Site Map
+              ul
+                li: a(href="/") Homepage
+                li: a(href="/about") About
+                li: a(href="/services") Services
+                li: a(href="/classinfo") Class Info
+                li: a(href="/contact") Contact Us
+                li: a(href="/login") Portal
+            
+            div.footer-column
+              h4 Legal
+              ul
+                li: a(href="#") Privacy Policy
+                li: a(href="#") Terms of Services
+                li: a(href="#") Lawyer's Corners
+        
+        div.footer-bottom
+          p Copyright © 2026, AtharvDanceAcademy. All Rights Reserved.

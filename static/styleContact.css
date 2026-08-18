@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Geologica:wght@100&family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: 12px 0;
+}
+.container{
+    min-height: 73vh;
+    margin: 43px 0;
+    
+}
+.container h1{
+    font-family: 'Belanosima', sans-serif;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.myInput{
+    font-size: 16px;
+    border: 2px solid #9436ff;
+    border-radius: 5px;
+    width: 40%;
+    padding: 9px;
+    margin: 10px;
+
+}
+.btn{
+    padding: 9px 16px;
+    font-size: 15px;
+    border: 2px solid #9436ff ;
+    border-radius: 5px;
+    background-color: #9436ff;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    outline: none;
+}

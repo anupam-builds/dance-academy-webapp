@@ -1,0 +1,18 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+      //- We can reuse contact style for the container padding
+      include ../static/styleContact.css 
+
+block content
+    div.container
+        h1 About Atharv's Dance Academy
+        div.about-content(style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8; font-size: 1.1rem; color: #57606f;")
+            p Founded in 2023, Atharv's Dance Academy (ADA) was born out of a simple passion: to make the joy of dancing accessible to everyone. 
+            p We believe that dance is not just about perfect technique; it is about expression, freedom, and community. Whether you are taking your first steps or preparing for a professional career, our world-class instructors are here to guide you.
+            p Join us and become part of a family that lives by one simple rule: Eat, Sleep, Dance, Repeat.
